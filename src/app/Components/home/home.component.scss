@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$main-color :#FF7F5C;
+$second-color : #F4DBD4;
+$back-color : #F9F5F3;
+
+
+
+
+.side-dashbord {
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  left: 0;
+}
+
+.dashboard {
+  width: 80px;
+  min-height: 100vh;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: $main-color;
+  padding-block: 15px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    display: block;
+    margin-block: 20px;
+  }
+
+}
+
+
+.top-nav {
+  margin-block: 30px;
+  .second-part {
+    position: relative;
+    .dotted{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 3px solid black ;
+      border-right-color: black;
+      clip-path: inset(0 0 10% 30%);
+
+      position: relative;
+      &::after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid #000;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+    }
+    &::after{
+      content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px dotted #000;
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+
+  }
+
+  .third-part {
+    background-color: $back-color;
+    border-radius: 25px;
+    height: 100%;
+    padding-right: 10px;
+  }
+
+  .fourth-part{
+    display: flex;
+    align-items: center;
+    padding-block: 5px;
+  }
+
+  .fifth-part{
+    display: flex;
+    align-items: center;
+    padding-block: 5px;
+     .pause{
+      width: 15px;
+      height: 15px;
+      background-color: $main-color;
+      margin-right: 5px;
+     }
+  }
+
+
+}
+
+
+main{
+  .price-table{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: $second-color;
+  }
+
+  .chart-container{
+    height: 300px;
+  }
+
+  table{
+    tbody{
+      tr{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .customize-to-scroll{
+    max-height: 50vh !important;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+  }
+
+  .progress-bar {
+    width: 50%;
+    background-color: $second-color;
+    border-radius: 20px;
+}
+
+.progress {
+    height: 8px;
+    background-color: $main-color;
+    transition: width 0.4s ease;
+}
+
+
+}
+

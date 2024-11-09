@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$main-color :#FF7F5C;
+$second-color : #F4DBD4;
+$back-color : #F9F5F3;
+$light-color : #f0f3f2;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: $light-color;
+}
+::-webkit-scrollbar-thumb{
+  background-color: $main-color;
+}
+
+.circle-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $main-color;
+  margin-right: 10px;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+
+.font-lg {
+  font-size: 30px;
+}
+
+.btn-main {
+  background-color: $main-color;
+  padding: 7px 40px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.bg-main {
+  background-color: $main-color !important;
+}
+
+.bg-back{
+  background-color: $back-color;
+}
+
+.actived-link{
+  color: $main-color !important;
+  position: relative;
+}
+
+.actived-link::after{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: $main-color;
+  position: absolute;
+  left: 10px;
+  top: 100%;
+}
